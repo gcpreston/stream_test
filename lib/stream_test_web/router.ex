@@ -18,6 +18,13 @@ defmodule StreamTestWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :home
+
+    live "/models", ModelLive.Index, :index
+    live "/models/new", ModelLive.Index, :new
+    live "/models/:id/edit", ModelLive.Index, :edit
+
+    live "/models/:id", ModelLive.Show, :show
+    live "/models/:id/show/edit", ModelLive.Show, :edit
   end
 
   # Other scopes may use custom stacks.
