@@ -1,7 +1,3 @@
-# IDEA
-# - Cuberacer user_rounds stream works when initialized for current user
-# - Does not work when initialized as part of a parent stream (or just any loop?)
-
 defmodule StreamTestWeb.SingleLive do
   use StreamTestWeb, :live_view
 
