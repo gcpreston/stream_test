@@ -25,6 +25,10 @@ defmodule StreamTestWeb.Router do
 
     live "/models/:id", ModelLive.Show, :show
     live "/models/:id/show/edit", ModelLive.Show, :edit
+
+    live "/single", SingleLive, :index
+    live "/assign", AssignLive, :index
+    live "/nested", NestedLive, :index
   end
 
   # Other scopes may use custom stacks.
